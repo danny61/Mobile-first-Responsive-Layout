@@ -1,5 +1,3 @@
-
-
 * {
     margin: 0px;
     padding: 0px;
@@ -7,9 +5,15 @@
 }
 
 body{
-    font-family: Rale
+    font-family: 'Nanum Gothic' , sans-serif;
 }
 
+.nav-links {
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
 li {
     margin: 5px 15px;
     padding: 5px 15px;
@@ -21,8 +25,7 @@ a {
     text-decoration: none;
 }
 
-
-.main-header {
+.main-header .nav-links {
     display: flex;
     flex-direction: column;
 }
@@ -34,7 +37,14 @@ h1{
 }
 
 
-.profile {
+
+.intro {
+    text-align: center;
+    margin: 15px auto;
+
+}
+
+.pro-image {
     display: block;
     width: 250px;
     margin: 25px 0;
@@ -44,7 +54,7 @@ h1{
 
 body{
     display: block;
-    background-color: rgb(156, 156, 156);
+    background-color: rgb(218, 213, 213);
     line-height: 1.5;
     max-width: 1024px;
     margin: 0 auto;
@@ -53,9 +63,8 @@ body{
 
 h3 {
 
-    background-color: whitesmoke;
+    background-color: transparent;
     text-align: center;
-    padding: 30px;
 }
 
 .wrapper {
@@ -76,7 +85,7 @@ h2 {
     margin: 0 auto;
 }
 
-.por {
+.port {
     margin: 10px;
     min-height: 250px;
     text-align: center;
@@ -139,6 +148,7 @@ footer {
 
 .student-name {
     margin: 40px 0px 0px 0px;
+    background-color: transparent;
 }
 
 .top {
@@ -147,6 +157,9 @@ footer {
     background-color: transparent;   
 }
 
+.footer-nav-links {
+    display: none;
+}
 
 @media screen and (min-width: 768px) {
     .main-header .nav-links {
@@ -178,6 +191,10 @@ footer {
          text-align: left; 
          margin-left: 15px;
      }
+    
+     .pro-image {
+         margin-right: 15px;
+     }
  
      .wrapper {
          display: flex;
@@ -195,6 +212,19 @@ footer {
          display: flex;
          justify-content: space-between;
      }
+ 
+     .footer-nav-links {
+         display: flex;
+         flex-direction: row;
+         margin: 0;
+         margin-right: 15px;
+     }
+  
+     .footer-nav-links {
+         list-style: none;
+         text-decoration: none;
+         text-transform: uppercase;
+     }
      
      h5 {
          display: flex;
@@ -209,7 +239,7 @@ footer {
          flex-basis: calc(33.333% - 20px);
          }
  
-     #Home {
+     #home {
          display: flex;
          flex-direction: row;
          align-items: center;
@@ -228,13 +258,17 @@ footer {
          margin-left: 0;
     }
  
-     .profile {
+     .pro-image {
          width: 300px;
          margin-right: 0;
      }
  
      h5 {
          margin-left: 0;
+     }
+ 
+     .footer-nav-links {
+         margin-right: 0;
      }
      
  
